@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DineFlow — a welcoming neighborhood restaurant.">
+  <title>DineFlow | Fresh food, good moments</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#home" aria-label="DineFlow home">Dine<span>Flow</span></a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#menu">Menu</a><a href="#story">Our story</a><a href="#visit">Visit us</a>
+      <a class="nav-cta" href="#booking">Book a table</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">FRESH INGREDIENTS · WARM HOSPITALITY</p>
+        <h1>Good food.<br><em>Better moments.</em></h1>
+        <p class="intro">A neighborhood table for slow lunches, lively dinners and everything worth sharing.</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="#menu">Explore the menu</a>
+          <a class="text-link" href="#booking">Book a table ↗</a>
+        </div>
+        <p class="small-note">Seasonal cooking · Made with care</p>
+      </div>
+      <div class="hero-art" role="img" aria-label="Illustration of a delicious meal on a restaurant table">
+        <div class="sun"></div><div class="plate"><div class="food food-one"></div><div class="food food-two"></div><div class="food food-three"></div><div class="leaf">✦</div></div>
+        <span class="art-label">MADE FRESH DAILY</span>
+      </div>
+    </section>
+
+    <section class="section menu-section" id="menu">
+      <div class="section-heading">
+        <div><p class="eyebrow">A LITTLE OF EVERYTHING</p><h2>From our kitchen</h2></div>
+        <p>Simple ingredients, thoughtful preparation<br>and flavors worth coming back for.</p>
+      </div>
+      <div class="menu-grid">
+        <article class="menu-card"><div class="dish-icon dish-a">🥗</div><div class="dish-meta"><h3>Garden table salad</h3><strong>$12</strong></div><p>Seasonal greens, roasted vegetables, lemon dressing.</p></article>
+        <article class="menu-card"><div class="dish-icon dish-b">🍝</div><div class="dish-meta"><h3>Sunday tomato pasta</h3><strong>$18</strong></div><p>Slow-cooked tomato sauce, herbs and parmesan.</p></article>
+        <article class="menu-card"><div class="dish-icon dish-c">🍄</div><div class="dish-meta"><h3>Wild mushroom toast</h3><strong>$14</strong></div><p>Golden sourdough, mushrooms and whipped ricotta.</p></article>
+      </div>
+      <p class="menu-disclaimer">Sample menu and prices for this demo project.</p>
+    </section>
+
+    <section class="story" id="story">
+      <div class="story-mark">D<span>F</span></div>
+      <div><p class="eyebrow">OUR KIND OF PLACE</p><h2>Come as you are.<br><em>Leave a little happier.</em></h2><p>We believe the best meals are about more than what is on the plate. DineFlow is a fictional restaurant concept created to showcase a responsive business website.</p></div>
+    </section>
+
+    <section class="section booking-section" id="booking">
+      <div class="section-heading"><div><p class="eyebrow">SAVE YOUR SEAT</p><h2>Join us at the table</h2></div><p>Send a reservation request.<br>We'll show a demo confirmation.</p></div>
+      <form id="booking-form" class="booking-form">
+        <label>Your name<input name="name" required minlength="2" placeholder="Alex Morgan"></label>
+        <label>Email address<input name="email" type="email" required placeholder="alex@example.com"></label>
+        <label>Date<input name="date" type="date" required></label>
+        <label>Guests<select name="guests"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select></label>
+        <button class="button button-dark" type="submit">Request a table</button>
+        <p class="form-message" id="form-message" role="status" aria-live="polite"></p>
+      </form>
+      <p class="menu-disclaimer">Demo only: this form does not send or store reservations.</p>
+    </section>
+
+    <section class="visit" id="visit"><div><p class="eyebrow">FIND YOUR WAY HERE</p><h2>Make yourself at home.</h2></div><div><p>24 Market Street<br>Your City, Your Country</p><p>Tue–Sun · 11:00–22:00</p><a class="text-link" href="mailto:hello@example.com">hello@example.com ↗</a></div></section>
+  </main>
+  <footer><a class="logo" href="#home">Dine<span>Flow</span></a><p>Fictional portfolio project · Designed and built for practice</p><a href="#home">Back to top ↑</a></footer>
+</body>
+</html>
